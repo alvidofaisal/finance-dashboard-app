@@ -1,0 +1,9 @@
+module.exports = {
+  testEnvironment: 'jsdom',
+  moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+  },
+  testPathIgnorePatterns: ['/node_modules/', '/.next/'],
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+};
